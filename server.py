@@ -19,10 +19,13 @@ def form():
 	if request.method == 'POST':
 		data = request.form.to_dict()
 		print(data)
+		print("for verification purpose")
+		print("adding some extra features")
 		database2(data)
 		return redirect('/acknowledge.html')
 	else:
-		'something went wrong, try again'
+
+		'something went wrong, try again!! Later'
 
 def database(data):
 	with open('database.txt', mode='a') as store:
