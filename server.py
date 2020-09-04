@@ -19,7 +19,6 @@ def form():
 	if request.method == 'POST':
 		data = request.form.to_dict()
 		print(data)
-		print("for verification purpose")
 		print("adding some extra features")
 		database2(data)
 		return redirect('/acknowledge.html')
