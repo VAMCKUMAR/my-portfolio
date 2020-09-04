@@ -25,7 +25,7 @@ def form():
 		return redirect('/acknowledge.html')
 	else:
 
-		'something went wrong, try again!!'
+		'something went wrong, try again!! Later'
 
 def database(data):
 	with open('database.txt', mode='a') as store:
